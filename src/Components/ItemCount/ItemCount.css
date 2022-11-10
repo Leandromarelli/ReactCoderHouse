@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    justify-content: space-around;
+}
+.btnCount{
+    background-color: rgb(211, 211, 211);
+    border-radius: 5px;  
+    margin-bottom: 1rem; 
+    padding: 0.5rem 1rem;
+    align-items: center;
+}
+.btnCount:hover{
+    background-color: rgb(141, 165, 129);
+    transition: 200ms;   
+}
+
+.btnAddCount{
+    border-radius: 5px;
+}
+

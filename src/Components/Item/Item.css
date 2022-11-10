@@ -1,0 +1,9 @@
+.row{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btnCart:hover{
+    transition: 700ms;
+}
