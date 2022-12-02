@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { BBDD } from "../../services/products"
+import { getProducts } from "../../services/firebase"
 import Itemlist from '../ItemList/Itemlist';
 
 
@@ -13,15 +13,15 @@ const ItemlistContainer = () => {
 
     useEffect ( () => {
       if (cat) {
-        BBDD("../json/stock.json").then(stock => {
-          const filterProd = stock.filter(p=> p.idCategory === cat)
+        getProducts().then(stock => {
+          const filterProd = stock.filter(p=> p.category === cat)
        
           const cardProducts = <Itemlist product = {filterProd} />
           setData(cardProducts)
         })
       } else {
         
-      BBDD("./json/stock.json").then(stock => {
+      getProducts().then(stock => {
         const cardProducts = <Itemlist product = {stock} />
         setData(cardProducts)
       })

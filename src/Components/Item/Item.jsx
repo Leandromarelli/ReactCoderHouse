@@ -7,7 +7,7 @@ const Item = ({value}) => {
       <div className='row col-lg-3'>
 
         <div className="card" style={{width: '18rem' }}>
-        <img src={`../assets/${value.img}`} className="img-fluid rounded h-100 mt-3" alt="producto" />
+        <img src={value.img} className="img-fluid rounded h-100 mt-3" alt="producto" />
         <div className="card-body">
           <h5 className="card-title">{value.name}</h5>
           <p className="card-text">Precio $ {value.price}</p>

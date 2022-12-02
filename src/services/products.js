@@ -1,3 +1,5 @@
+import { loadDataBase } from "./firebase";
+
 
 export const BBDD = async (route) => {
     const response = await fetch(route);
@@ -5,3 +7,5 @@ export const BBDD = async (route) => {
     
     return data
   }
+
+// loadDataBase();

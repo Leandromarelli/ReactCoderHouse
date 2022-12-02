@@ -1,0 +1,11 @@
+.checkoutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.formulario{
+    margin-top: 3rem;
+}
